@@ -56,7 +56,25 @@ a {
 }
 .product-inner-item {
   width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+.product-inner-item h2 {
+  text-transform: capitalize;
 }
 .product-inner-item img {
   width: 100%;
+}
+.product-inner-item div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-inner-item div button {
+  padding: 5px 15px;
+  border: none;
+  background-color: #0095ff;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */

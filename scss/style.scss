@@ -53,8 +53,26 @@ a{
         }
         &-item{
             width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 5px;
+            h2{
+                text-transform: capitalize;
+            }
             img{
                 width: 100%;
+            }
+            div{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                button{
+                    padding: 5px 15px;
+                    border: none;
+                    background-color: #0095ff;
+                    border-radius: 5px;
+                }
             }
         }
     }
