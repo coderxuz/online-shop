@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 1300px;
+    margin: 0 auto;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
+    &-item{
+        width: 50%;
+    }
+    &-title{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        gap: 20px;
+        h2{
+            text-transform: capitalize;
+        }
+        button{
+            background-color: rgb(58, 58, 237);
+            padding: 10px 40px;
+            border-radius: 20px;
+            color: #fff;
+            border: none;
+        }
+    }
+}
+button{
+    cursor: pointer;
+}
