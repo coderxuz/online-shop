@@ -44,6 +44,20 @@
     }
   ],
   "users": [
-    
+    {
+      "id": "e5f0",
+      "user": "user",
+      "password": "admin"
+    },
+    {
+      "id": "f727",
+      "user": "user",
+      "password": "student"
+    },
+    {
+      "id": "bec9",
+      "user": "user",
+      "password": "student"
+    }
   ]
 }

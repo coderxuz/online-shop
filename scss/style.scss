@@ -24,6 +24,7 @@ a{
         font-size: 20px;
         &-item{
             color: #000;
+            text-transform: capitalize;
             &-link{
                 color: #000;
                 &:hover{
@@ -32,6 +33,22 @@ a{
             }
         }
         
+    }
+}
+#account{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    &:hover{
+        color: rgb(68, 59, 59);
+        &:hover{
+            filter: brightness(0) saturate(100%) invert(20%) sepia(16%) saturate(294%) hue-rotate(315deg) brightness(100%) contrast(88%);
+        }
+    }
+    svg{
+        width: 20px;
+        height: 20px;
     }
 }
 .first{
