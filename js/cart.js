@@ -10,21 +10,28 @@ const cardId = cardData.filter((element, index) => {
   return cardData.indexOf(element) === index;
 });
 console.log(cardId);
-get("https://dummyjson.com/c/fc6c-0144-433e-8879").then((data) => {
-  cardId.map((element) => {
+get("http://localhost:3000/products").then((data) => {
     data.map((item) => {
-      if (item.id == element) {
-        $boxInner = document.createElement("div");
-        $name = document.querySelector('h2')
-        $name.innerHTML = item.name
-        $title  = document.querySelector('p')
-        $title.innerHTML = item.title
-        $price = document.getElementById('price')
-        $price.innerHTML = item.price
+      cardId.map(elem=>{
+        if (item.id == elem) {
+          const $boxInner = document.createElement("div");
+          const $name = document.createElement('h2')
+          const $img = document.createElement('img')
+          const $title = document.createElement('p')
+          const $price = document.createElement('p')
 
-        $box.appendChild($boxInner)
-        $boxInner.appendChild($name)
-      }
+          $name.innerHTML = item.name
+          $title.innerHTML = item.title
+          $price.innerHTML = item.price
+          $img.src = item.img
+          $boxInner.classList = 'box-inner'
+
+          $box.appendChild($boxInner)
+          $boxInner.appendChild($img)
+          $boxInner.appendChild($name)
+          $boxInner.appendChild($title)
+          $boxInner.appendChild($price)
+        }
+      })
     });
-  });
 });

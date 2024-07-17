@@ -7,7 +7,7 @@ const get = async (resurs) => {
 };
 const cart = [];
 
-get("https://dummyjson.com/c/fc6c-0144-433e-8879").then((data) => {
+get("http://localhost:3000/products").then((data) => {
   const $search = document.getElementById("search");
   const $productCard = document.createElement("div");
   function byName(arr) {
@@ -76,3 +76,6 @@ get("https://dummyjson.com/c/fc6c-0144-433e-8879").then((data) => {
   });
   byName(data);
 });
+const $sign = document.getElementById('sign')
+const $account = document.getElementById('account')
+
