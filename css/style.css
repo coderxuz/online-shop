@@ -28,12 +28,30 @@ a {
 }
 .header-list-item {
   color: #000;
+  text-transform: capitalize;
 }
 .header-list-item-link {
   color: #000;
 }
 .header-list-item-link:hover {
   color: #443b3b;
+}
+
+#account {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+#account:hover {
+  color: rgb(68, 59, 59);
+}
+#account:hover:hover {
+  filter: brightness(0) saturate(100%) invert(20%) sepia(16%) saturate(294%) hue-rotate(315deg) brightness(100%) contrast(88%);
+}
+#account svg {
+  width: 20px;
+  height: 20px;
 }
 
 .first {
